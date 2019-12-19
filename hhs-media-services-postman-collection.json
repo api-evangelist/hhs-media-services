@@ -1,0 +1,1723 @@
+{
+    "id": "85e7cfb9bac028c49d471d2bc53e7e7f",
+    "name": "HHS Media Services",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "dcb83d5918d5766d68b1aa3c485c6873",
+            "name": "Get Resources by search query",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources.json",
+            "description": "Returns the list of Resources matching the search query 'q'.The search query 'q' is a Lucene query.The syntax for a Lucene query can be found here.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "The search query supplied by the user",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "9d077ede797eab4b487d7980d696c502",
+            "name": "Get Campaigns",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns.json",
+            "description": "Returns the list of Campaigns.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "a18178a56c799a117e925b4d5a957b77",
+            "name": "Get Campaign by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns\/{id}.json",
+            "description": "Returns the Campaign identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "336b6acec6ba4c48e77f3b2ee972bb0e",
+            "name": "Get MediaItems by Campaign ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns\/{id}\/media.json",
+            "description": "Returns the list of MediaItems for the Campaign identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "42f2ec6ffc4100065e7a3eef2868421e",
+            "name": "Get MediaItems for Campaign",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns\/{id}\/syndicate.json",
+            "description": "Renders the list of MediaItems associated with the Campaign identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "displayMethod",
+                    "description": "Method used to render an html request. Accepts one: [mv, list, feed]",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "501c75c1b4a6075cc871b7ab5ef4aa12",
+            "name": "Get Languages",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/languages.json",
+            "description": "Returns the list Languages.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "dcd3378e6af53da97c859f95f978dca3",
+            "name": "Get Language by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/languages\/{id}.json",
+            "description": "Returns the Language identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "5784bae040d932514897cca8c1be7fa6",
+            "name": "Get MediaItems",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media.json",
+            "description": "Returns the list of MediaItems matching the specified query parameters.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "order",
+                    "description": "* The ascending or descending order.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mediaTypes",
+                    "description": "Find all media items belonging to the specified media type[s].",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Find all media items containing the provided name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "collectionId",
+                    "description": "Restrict filtering to media items in a specific collection.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "nameContains",
+                    "description": "Find all media items containing the partial name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "descriptionContains",
+                    "description": "Find all media items containing the provided partial description, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceUrl",
+                    "description": "Find all media items which have the provided sourceUrl, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceUrlContains",
+                    "description": "Find all media items which contain the provided partial sourceUrl, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "customThumbnailUrl",
+                    "description": "Find all media items which have the provided customThumbnailUrl, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "customThumbnailUrlContains",
+                    "description": "Find all media items which contain the provided partial customThumbnailUrl, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateContentAuthored",
+                    "description": "Find all media items authored on the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateContentUpdated",
+                    "description": "Find all media items updated on the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateContentPublished",
+                    "description": "Find all media items published on the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateContentReviewed",
+                    "description": "Find all media items reviewed on the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateSyndicationCaptured",
+                    "description": "Find all media items authored on the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "dateSyndicationUpdated",
+                    "description": "Find all media items updated on the provided day, (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentAuthoredSinceDate",
+                    "description": "Find all media items authored since the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentAuthoredBeforeDate",
+                    "description": "Find all media items authored before the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentAuthoredInRange",
+                    "description": "Find all media items authored between the provided start and end days (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentUpdatedSinceDate",
+                    "description": "Find all media items updated since the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentUpdatedBeforeDate",
+                    "description": "Find all media items updated before the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentUpdatedInRange",
+                    "description": "Find all media items updated between the provided start and end days (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentPublishedSinceDate",
+                    "description": "Find all media items published since the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentPublishedBeforeDate",
+                    "description": "Find all media items published before the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentPublishedInRange",
+                    "description": "Find all media items published between the provided start and end days (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentReviewedSinceDate",
+                    "description": "Find all media items reviewed since the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentReviewedBeforeDate",
+                    "description": "Find all media items reviewed before the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "contentReviewedInRange",
+                    "description": "Find all media items reviewed between the provided start and end days (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationCapturedSinceDate",
+                    "description": "Find all media items authored since the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationCapturedBeforeDate",
+                    "description": "Find all media items authored before the provided day (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationCapturedInRange",
+                    "description": "Find all media items authored between the provided start and end days (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationUpdatedSinceDate",
+                    "description": "Find all media items updated since the provided day, (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationUpdatedBeforeDate",
+                    "description": "Find all media items updated before the provided day, (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationUpdatedInRange",
+                    "description": "Find all media items updated between the provided start and end days, (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationVisibleSinceDate",
+                    "description": "Find all media items visible since the provided day, (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationVisibleBeforeDate",
+                    "description": "Find all media items visible before the provided day, (RFC 3339, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "syndicationVisibleInRange",
+                    "description": "Find all media items visible between the provided start and end days, (RFC 3339, comma separated, time ignored).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "languageId",
+                    "description": "Find all media items written in the language specified by Id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "languageName",
+                    "description": "Find all media items written in the language specified by name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "languageIsoCode",
+                    "description": "Find all media items written in the language specified by 639-2 isoCode , case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hash",
+                    "description": "Find all media items which match the provided hash, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "hashContains",
+                    "description": "Find all media items which match the provided partial hash, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceId",
+                    "description": "Find all media items that belong to the source specified by Id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceName",
+                    "description": "Find all media items that belong to the source specified by name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceNameContains",
+                    "description": "Find all media items that belong to the source specified by partial name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceAcronym",
+                    "description": "Find all media items that belong to the source specified by acronym, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceAcronymContains",
+                    "description": "Find all media items that belong to the source specified by partial acronym, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "tagIds",
+                    "description": "Find only media items tagged with the specified tag Ids.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "restrictToSet",
+                    "description": "Find only media from within the supplied list of Ids.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "createdBy",
+                    "description": "Find all media items containing the createdBy value.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "394710cdb12d432459d57b5a2b7bec13",
+            "name": "Get the list of featured content in the syndication system",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/featured.json",
+            "description": "Get the list of featured content in the syndication system",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "750e5a928bf15b3b05f1dcf87d31e791",
+            "name": "Get MediaItems by popularity",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/mostPopularMedia.json",
+            "description": "Returns the list of MediaItems with the highest ratings.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "d21b1d1180b76c8a3ffd8936c427da87",
+            "name": "Get MediaItems by search query",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/searchResults.json",
+            "description": "Returns the list of MediaItems matching the search query 'q'.The search query 'q' is a Lucene query.The syntax for a Lucene query can be found here",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "q",
+                    "description": "The search query supplied by the user",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "4240cba99b62968196f87a525bcc8079",
+            "name": "Get MediaItem by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}.json",
+            "description": "Returns the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "9a9c3d0dde400e2591b02014bd548ed0",
+            "name": "Get content for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/content",
+            "description": "Returns the raw content (html, image, etc...) for the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "calledByBuild",
+                    "description": "The method that called this method",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "d35a3bd408cf6f8531b66d7385383c3b",
+            "name": "Get embed code for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/embed.json",
+            "description": "Returns the javascript or iframe embed code for the MediaItem identified by 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "flavor",
+                    "description": "Currently supports 'iframe', defaults to 'javascript'.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "width",
+                    "description": "The width of the generated iframe.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "height",
+                    "description": "The height of the generated iframe.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "iframeName",
+                    "description": "The name of the iframe element",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "excludeJquery",
+                    "description": "Should a reference to the JQuery Library be omitted?",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "excludeDiv",
+                    "description": "Should the div to insert content into be omitted?",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "divId",
+                    "description": "Should the div to insert content into have a specific name?",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "displayMethod",
+                    "description": "Method used to render an html request. Accepts one: [mv, list, feed]",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "174136e896743c7fb587485243eec66c",
+            "name": "Get JPG preview for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/preview.jpg",
+            "description": "Returns the JPG preview, where applicable, for the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "c9572fd0fbe311acfbe309a11a5ae07c",
+            "name": "Get Ratings for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/ratings.json",
+            "description": "Get the Ratings (number of 'likes') for the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "1c0c666400a4f5382767f21045de9178",
+            "name": "Get related MediaItems by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/relatedMedia.json",
+            "description": "Returns the list of MediaItems related to the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "51afc0eeb46e479ad06aa7ce4ea41261",
+            "name": "Get syndicated content for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/syndicate.json",
+            "description": "Returns the syndicated content for a given MediaItem in the specified 'format' (HTML or JSON).",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "cssClass",
+                    "description": "The css class to target for extraction.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripStyles",
+                    "description": "Remove in-line styles from content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripScripts",
+                    "description": "Remove script tags from content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripImages",
+                    "description": "Remove image tags from content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripBreaks",
+                    "description": "Remove break tags from content.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "stripClasses",
+                    "description": "Remove class attributes from content (except 'syndicate').",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "font",
+                    "description": "Set font size (in points) of p, div, and span tags.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageFloat",
+                    "description": "Accepts valid CSS float options, such as 'left' or 'right'. Will inject a style into the content before rendering.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageMargin",
+                    "description": "Accepts 4 CSV values representing pixel sizes of margin similar to CSS. Default format is 'north,east,south,west' - for example '0,10,10,0' would put a 10 pixel margin on the right and bottom sides of an image. Will inject a style into the content before rendering.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "autoplay",
+                    "description": "If content is a video, the embeded video will auto play when loaded.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rel",
+                    "description": "If content is a video, related items will be shown at the end of playback.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "37a08fdda031b6df50b1b386f3c3eb1e",
+            "name": "Get JPG thumbnail for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/thumbnail.jpg",
+            "description": "Returns the JPG thumbnail, where applicable, for the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "d5d7d48000e44a7b3ddd6822e22c4e0d",
+            "name": "Get Youtube metadata for MediaItem",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/youtubeMetaData.json",
+            "description": "Returns the Youtube metadata, where applicable, for the MediaItem identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "fd4039b2ddb04f0c3612994a4cad3d63",
+            "name": "Get MediaTypes",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/mediaTypes.json",
+            "description": "Returns the list of available MediaTypes.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "363b9d8f4085f10cac30569ea1b48c2c",
+            "name": "Get Sources",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/sources.json",
+            "description": "Returns the list of Sources.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "9331828f4a3a5fa68789cf4dcdca8a61",
+            "name": "Get Source by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/sources\/{id}.json",
+            "description": "Returns the Source identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "75f42b61464978eac4b53fc71f29a541",
+            "name": "Get MediaItems for Source",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/sources\/{id}\/syndicate.json",
+            "description": "Renders the list of MediaItems associated with the Source identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "displayMethod",
+                    "description": "Method used to render an html request. Accepts one: [mv, list, feed]",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "77a22abcec8fe324d7c7e8b66509d53f",
+            "name": "Get Tags",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags.json",
+            "description": "Returns the list of Tags matching the specified query parameters in the specified 'format'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "name",
+                    "description": "Find all media items containing the provided name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "nameContains",
+                    "description": "Find all media items containing the partial name, case insensitive.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "mediaId",
+                    "description": "Return tags associated with the supplied media id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "typeId",
+                    "description": "Return tags belonging to the supplied tag type id.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "typeName",
+                    "description": "Return tags belonging to the supplied tag type name.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "88b4b377a82961d234a61c32238962bb",
+            "name": "Get TagLanguages",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/tagLanguages.json",
+            "description": "Returns the list of TagLanguages",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "9946121c60d1aca09c9c4f21bb1f7e51",
+            "name": "Get TagTypes",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/tagTypes.json",
+            "description": "Returns the list of TagTypes",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "28872489c489234df822ca7a086d58f9",
+            "name": "Get Tag by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}.json",
+            "description": "Returns the Tag identified by the 'id' in the specified 'format'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "b698a77ca602afcb139271b933971fdc",
+            "name": "Get MediaItems for Tag",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}\/media.json",
+            "description": "Returns the list of MediaItems associated with the Tag identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "72e6eb90fb4769a7ac453d47195fe181",
+            "name": "Get related Tags by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}\/related.json",
+            "description": "Returns the list of Tags related to the Tag identified by the 'id' in the specified format.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "max",
+                    "description": "The maximum number of records to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "offset",
+                    "description": "The offset of the records set to return for pagination",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "* Set of fields to sort the records by.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "a333e4405d1e09d347d55301d51f62f6",
+            "name": "Get MediaItems for Tag",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}\/syndicate.json",
+            "description": "Renders the list of MediaItems associated with the Tag identified by the 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "displayMethod",
+                    "description": "Method used to render an html request. Accepts one: [mv, list, feed]",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        },
+        {
+            "id": "b2ab59b7ddc2e0c1e501055eac165753",
+            "name": "Get UserMediaList by ID",
+            "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/userMediaLists\/{id}.json",
+            "description": "Get a specific user media list by 'id'.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "The id of the record to look up",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "displayMethod",
+                    "description": "Method used to render an html request. Accepts one: [mv, list, feed]",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "rawModeData": ""
+        }
+    ]
+}
