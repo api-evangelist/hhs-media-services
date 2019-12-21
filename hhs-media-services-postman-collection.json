@@ -1,5 +1,5 @@
 {
-    "id": "85e7cfb9bac028c49d471d2bc53e7e7f",
+    "id": "ca6b0289504d3a6eba97aed60b804ed8",
     "name": "HHS Media Services",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "dcb83d5918d5766d68b1aa3c485c6873",
+            "id": "7633f86d3d9ccf504a4d43b44e1a4f23",
             "name": "Get Resources by search query",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources.json",
             "description": "Returns the list of Resources matching the search query 'q'.The search query 'q' is a Lucene query.The syntax for a Lucene query can be found here.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "9d077ede797eab4b487d7980d696c502",
+            "id": "abc91c4fc71b61986e65d1b40e8f24d8",
             "name": "Get Campaigns",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns.json",
             "description": "Returns the list of Campaigns.",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "a18178a56c799a117e925b4d5a957b77",
+            "id": "4c2da20373e9dab0269cbe3cd38b5082",
             "name": "Get Campaign by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns\/{id}.json",
             "description": "Returns the Campaign identified by the 'id'.",
@@ -113,11 +113,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "336b6acec6ba4c48e77f3b2ee972bb0e",
+            "id": "89dacf366261295a8b1a3f27336225ba",
             "name": "Get MediaItems by Campaign ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns\/{id}\/media.json",
             "description": "Returns the list of MediaItems for the Campaign identified by the 'id'.",
@@ -165,11 +165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "42f2ec6ffc4100065e7a3eef2868421e",
+            "id": "72ea599d841402190490bc8f9a40067f",
             "name": "Get MediaItems for Campaign",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/campaigns\/{id}\/syndicate.json",
             "description": "Renders the list of MediaItems associated with the Campaign identified by the 'id'.",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "501c75c1b4a6075cc871b7ab5ef4aa12",
+            "id": "20a21124a7350f55d0c9e045565986c8",
             "name": "Get Languages",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/languages.json",
             "description": "Returns the list Languages.",
@@ -248,11 +248,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "dcd3378e6af53da97c859f95f978dca3",
+            "id": "0911efc0d551f290bf48d332648556b3",
             "name": "Get Language by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/languages\/{id}.json",
             "description": "Returns the Language identified by the 'id'.",
@@ -279,11 +279,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "5784bae040d932514897cca8c1be7fa6",
+            "id": "0af8977779ebe2b9dccb1ffc505a6443",
             "name": "Get MediaItems",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media.json",
             "description": "Returns the list of MediaItems matching the specified query parameters.",
@@ -674,11 +674,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "394710cdb12d432459d57b5a2b7bec13",
+            "id": "dc92f95fc4bfb560a9f7eba47536c5e9",
             "name": "Get the list of featured content in the syndication system",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/featured.json",
             "description": "Get the list of featured content in the syndication system",
@@ -719,11 +719,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "750e5a928bf15b3b05f1dcf87d31e791",
+            "id": "5aad5c547c54c5135a9311c63a931e43",
             "name": "Get MediaItems by popularity",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/mostPopularMedia.json",
             "description": "Returns the list of MediaItems with the highest ratings.",
@@ -757,11 +757,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "d21b1d1180b76c8a3ffd8936c427da87",
+            "id": "af019e357be2492c2158cb4e73b65f40",
             "name": "Get MediaItems by search query",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/searchResults.json",
             "description": "Returns the list of MediaItems matching the search query 'q'.The search query 'q' is a Lucene query.The syntax for a Lucene query can be found here",
@@ -802,11 +802,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "4240cba99b62968196f87a525bcc8079",
+            "id": "31367e70e8ab828be9a3b38b64eefc76",
             "name": "Get MediaItem by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}.json",
             "description": "Returns the MediaItem identified by the 'id'.",
@@ -833,11 +833,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "9a9c3d0dde400e2591b02014bd548ed0",
+            "id": "8a864d591f4955e7ec552cb408140f1d",
             "name": "Get content for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/content",
             "description": "Returns the raw content (html, image, etc...) for the MediaItem identified by the 'id'.",
@@ -871,11 +871,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "d35a3bd408cf6f8531b66d7385383c3b",
+            "id": "14134f2709957fdf279012219884ef40",
             "name": "Get embed code for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/embed.json",
             "description": "Returns the javascript or iframe embed code for the MediaItem identified by 'id'.",
@@ -958,11 +958,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "174136e896743c7fb587485243eec66c",
+            "id": "3ad02b6780f746ceb3b3f334246e3a48",
             "name": "Get JPG preview for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/preview.jpg",
             "description": "Returns the JPG preview, where applicable, for the MediaItem identified by the 'id'.",
@@ -989,11 +989,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "c9572fd0fbe311acfbe309a11a5ae07c",
+            "id": "0f9db428987ab5a458e71633b371fac1",
             "name": "Get Ratings for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/ratings.json",
             "description": "Get the Ratings (number of 'likes') for the MediaItem identified by the 'id'.",
@@ -1020,11 +1020,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "1c0c666400a4f5382767f21045de9178",
+            "id": "f1c781634ef62e2bc72062cb6d689a4f",
             "name": "Get related MediaItems by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/relatedMedia.json",
             "description": "Returns the list of MediaItems related to the MediaItem identified by the 'id'.",
@@ -1072,11 +1072,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "51afc0eeb46e479ad06aa7ce4ea41261",
+            "id": "448b30cedbb34a31a47495005937a418",
             "name": "Get syndicated content for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/syndicate.json",
             "description": "Returns the syndicated content for a given MediaItem in the specified 'format' (HTML or JSON).",
@@ -1180,11 +1180,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "37a08fdda031b6df50b1b386f3c3eb1e",
+            "id": "3c70db61bf9f0f2985293cd8c1dd45d8",
             "name": "Get JPG thumbnail for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/thumbnail.jpg",
             "description": "Returns the JPG thumbnail, where applicable, for the MediaItem identified by the 'id'.",
@@ -1211,11 +1211,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "d5d7d48000e44a7b3ddd6822e22c4e0d",
+            "id": "97e011edeb9d860b9a10618341b34065",
             "name": "Get Youtube metadata for MediaItem",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/media\/{id}\/youtubeMetaData.json",
             "description": "Returns the Youtube metadata, where applicable, for the MediaItem identified by the 'id'.",
@@ -1242,11 +1242,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "fd4039b2ddb04f0c3612994a4cad3d63",
+            "id": "79a18d54a3c00c68f3ca6b64021d2e56",
             "name": "Get MediaTypes",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/mediaTypes.json",
             "description": "Returns the list of available MediaTypes.",
@@ -1265,11 +1265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "363b9d8f4085f10cac30569ea1b48c2c",
+            "id": "14f01fe87bd8566057bfd0e41d3cf549",
             "name": "Get Sources",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/sources.json",
             "description": "Returns the list of Sources.",
@@ -1310,11 +1310,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "9331828f4a3a5fa68789cf4dcdca8a61",
+            "id": "a1183163e5499d6eddea2d67e6542bf5",
             "name": "Get Source by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/sources\/{id}.json",
             "description": "Returns the Source identified by the 'id'.",
@@ -1341,11 +1341,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "75f42b61464978eac4b53fc71f29a541",
+            "id": "a57d509720739eb2784cb5ca36fa5954",
             "name": "Get MediaItems for Source",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/sources\/{id}\/syndicate.json",
             "description": "Renders the list of MediaItems associated with the Source identified by the 'id'.",
@@ -1379,11 +1379,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "77a22abcec8fe324d7c7e8b66509d53f",
+            "id": "fdf8b671e1f5b07a206cd50138a26ed8",
             "name": "Get Tags",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags.json",
             "description": "Returns the list of Tags matching the specified query parameters in the specified 'format'.",
@@ -1459,11 +1459,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "88b4b377a82961d234a61c32238962bb",
+            "id": "06cfc28fe06b0148bb3c917eb1d20cea",
             "name": "Get TagLanguages",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/tagLanguages.json",
             "description": "Returns the list of TagLanguages",
@@ -1482,11 +1482,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "9946121c60d1aca09c9c4f21bb1f7e51",
+            "id": "8b460032d213074049f49055f57ff58a",
             "name": "Get TagTypes",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/tagTypes.json",
             "description": "Returns the list of TagTypes",
@@ -1505,11 +1505,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "28872489c489234df822ca7a086d58f9",
+            "id": "29c7d883bc695368d70017a65ca953c1",
             "name": "Get Tag by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}.json",
             "description": "Returns the Tag identified by the 'id' in the specified 'format'.",
@@ -1536,11 +1536,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "b698a77ca602afcb139271b933971fdc",
+            "id": "0b880feca91a74a7615f81a1ecf7c61c",
             "name": "Get MediaItems for Tag",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}\/media.json",
             "description": "Returns the list of MediaItems associated with the Tag identified by the 'id'.",
@@ -1588,11 +1588,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "72e6eb90fb4769a7ac453d47195fe181",
+            "id": "9dd0aca12b827cfa571ee8d84b995aac",
             "name": "Get related Tags by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}\/related.json",
             "description": "Returns the list of Tags related to the Tag identified by the 'id' in the specified format.",
@@ -1640,11 +1640,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "a333e4405d1e09d347d55301d51f62f6",
+            "id": "c22e0ba420c883588ef93b1b8c5a64a9",
             "name": "Get MediaItems for Tag",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/tags\/{id}\/syndicate.json",
             "description": "Renders the list of MediaItems associated with the Tag identified by the 'id'.",
@@ -1678,11 +1678,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         },
         {
-            "id": "b2ab59b7ddc2e0c1e501055eac165753",
+            "id": "76f3b76b237f60e611301e91ab1a3eae",
             "name": "Get UserMediaList by ID",
             "url": "httpsapi.digitalmedia.hhs.gov\/api\/v2\/resources\/userMediaLists\/{id}.json",
             "description": "Get a specific user media list by 'id'.",
@@ -1716,7 +1716,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "85e7cfb9bac028c49d471d2bc53e7e7f",
+            "collectionId": "ca6b0289504d3a6eba97aed60b804ed8",
             "rawModeData": ""
         }
     ]
